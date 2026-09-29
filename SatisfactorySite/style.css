@@ -1,0 +1,208 @@
+
+
+#wgg-netbar 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    font-size: 14px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8em;
+    height: 35px;
+    padding: 0 0.85em;
+    font-family: 'Nunito', sans-serif;
+    background-color: #000538;
+    color: #fff;
+    box-shadow: 0 0.25em 0.6em -0.15em rgba(0, 0, 0, 0.15);
+    --color-base: #fff;
+}
+
+.wgg-netbar__left {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.wgg-netbar__logo {
+    padding: calc((35px - 25px) / 2) 0;
+    
+}
+
+a, .mw-parser-output a.external, .mw-parser-output a.extiw {
+    color: #0645ad;
+}
+
+.wgg-netbar__logo > a > img {
+    height: 25px;
+    width: auto;
+}
+
+a, .mw-parser-output a.external, .mw-parser-output a.extiw {
+    color: #0645ad;
+}
+
+.wgg-netbar__logo > a > img {
+    height: 25px;
+    width: auto;
+}
+
+.wgg-netbar__user-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+#wgg-netbar .wgg-netbar__deals-link {
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 5px;
+    height: calc(2 / 3 * 30px);
+    padding: 0 10px;
+    border-radius: 0.4em;
+    background-color: #29305c;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+}
+
+#wgg-netbar .wgg-netbar__deals-link > .wgg-netbar__deals-link__icon {
+    width: auto;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+.wgg-netbar__deals-link {
+    color: #fff;
+}
+
+#wgg-netbar .wgg-netbar__user-links {
+    flex: 1;
+}
+
+.wgg-netbar__user-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.75em;
+}
+
+#p-personal {
+    position: absolute;
+    top: 6px;
+    right: 0.75em;
+}
+
+.wgg-netbar__user-links #p-personal {
+    position: static;
+}
+
+.wgg-netbar__user-links #p-personal > ul {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.75em;
+}
+
+.wgg-netbar__user-links #p-personal > ul > li {
+    margin-bottom: 0;
+}
+
+#p-personal li + #pt-createaccount, #p-personal li + #pt-userpage, #p-personal li + #pt-preferences {
+    border-left: 1px solid #2e3460;
+    padding-left: 0.75em;
+}
+
+.wgg-netbar__user-links #p-personal > ul > li {
+    margin-bottom: 0;
+}
+
+
+li#pt-themes .ext-themetoggle-simple-icon {
+    display: block;
+    padding: 0.4rem;
+    font-size: 0;
+    transition: all 0.3s;
+}
+
+li#pt-themes .ext-themetoggle-simple-icon::before {
+    content: '';
+}
+
+
+.ext-themetoggle-simple-icon::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background-color: #fff;
+
+    -webkit-mask-image: url("images/theme.svg");
+    mask-image: url("images/theme.svg");
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.wgg-netbar__user-links #p-personal > ul > li > a > span {
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+.wgg-netbar__user-links #p-personal > ul > li > a, .wgg-netbar__user-links #p-personal > ul > li > a:visited, .wgg-netbar__user-links #p-personal > ul > li > a:focus, .wgg-netbar__user-links #p-personal > ul > li > a:hover {
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration : none;
+}
+
+a:hover{
+    text-decoration :  underline;
+}
+
+@media screen and (min-width: 721px) {
+    #mw-head-base, #mw-page-base {
+        height: var(--head-height);
+    }
+}
+
+@media screen and (min-width: 721px) {
+    #mw-head-base {
+        background: transparent;
+        margin-top: calc(var(--head-height) * -1);
+        margin-left: calc(var(--sidebar-width) + 1.6em);
+    }
+}
+
+.content-wrapper {
+    font-family: "Noto Sans", system-ui, sans-serif;
+}
+
+.content-wrapper {
+    font-family: "Noto Sans", system-ui, sans-serif;
+}
+
+h2 {
+    position: absolute;
+    top: -9999px;
+    color: #111111;
+    font-size: 150%;
+    font-weight: normal;
+}
+

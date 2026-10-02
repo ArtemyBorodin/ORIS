@@ -95,6 +95,7 @@ body{
     background-color : #29305c;
     white-space : nowrap;
     transition: background-color 0.2s;
+    color : #fff;
 }
 .deals-btn img{
     width : 14px;
@@ -117,4 +118,46 @@ body{
     gap : 10.5px;
     list-style : none;
     margin : 0px;
+}
+
+.icon-btn{
+    display : block;
+    padding : 6.4px;
+    font-size : 0px;
+    transition : all 0.3s;
+}
+
+.icon-btn img{
+    width : 20px;
+    height : 20px;
+    background : #FFFFFF;
+}
+
+.link{
+    word-break : keep-all;
+    white-space : nowrap;
+    color : #fff;
+    font-family : 14px, Nunito, sans-serif;
+    width : 93,7px;
+    height : 18.67px;
+}
+
+.link login{
+    width : 38.33px;
+    height : 18.67px;
+    color : #fff;
+    font-family : 14px, Nunito, sans-serif;
+}
+
+.link:first-of-type{
+    border-left : 1px solid #2e3460;
+    padding-left : 10.5px;
+}
+
+a{
+    text-decoration : none;
+}
+
+a:hover{
+    text-decoration : underline;
 }

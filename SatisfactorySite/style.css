@@ -140,6 +140,7 @@ body{
     font-family : 14px, Nunito, sans-serif;
     width : 93,7px;
     height : 18.67px;
+    margin-bottom: 0;
 }
 
 .link login{
@@ -147,12 +148,10 @@ body{
     height : 18.67px;
     color : #fff;
     font-family : 14px, Nunito, sans-serif;
+    
 }
 
-.link:first-of-type{
-    border-left : 1px solid #2e3460;
-    padding-left : 10.5px;
-}
+
 
 a{
     text-decoration : none;

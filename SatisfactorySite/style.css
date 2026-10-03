@@ -35,16 +35,9 @@ body{
 
 #mw-page-base{
     height : 96px;
-    padding-top : 35px;
     background : none;
 }
 
-#mw-head-base{
-    background : #00000000;
-    margin-top : -96px;
-    margin-left : 185.6px;
-    height : 96px;
-}
 
 .content-wrapper{
     font-family : "Noto Sans", system-ui, sans-serif;
@@ -109,7 +102,7 @@ body{
 
 .header-right{
     position : static;
-    width : 196.99;
+    width : 196.99px;
     height : 32.79;
     display : flex;
     flex-wrap : nowrap;
@@ -137,17 +130,22 @@ body{
     word-break : keep-all;
     white-space : nowrap;
     color : #fff;
-    font-family : 14px, Nunito, sans-serif;
-    width : 93,7px;
+    font-family :  Nunito, sans-serif;
+    font-size : 14px;
+    width : 93.7px;
     height : 18.67px;
     margin-bottom: 0;
+    border-left : 1px solid #2e3460;
+    padding-left : 10.5px;
 }
 
-.link login{
+.link.login{
     width : 38.33px;
     height : 18.67px;
     color : #fff;
     font-family : 14px, Nunito, sans-serif;
+    border-left : none;
+    padding-left : 0px;
     
 }
 
@@ -159,4 +157,86 @@ a{
 
 a:hover{
     text-decoration : underline;
+}
+
+#mw-head-base{
+    background : #00000000;
+    margin-top : 35px;
+    margin-left : 185.6px;
+    display : flex;
+    background-position : center center;
+    background-repeat : no-repeat;
+    background-size : contain;
+    
+}
+
+.mw-wiki-logo-container{
+    margin-left : 0px;
+    margin-top : -1px;
+    display : flex;
+    justify-content : center;
+}
+
+.mw-wiki-logo{
+    width : 247.423px;
+    height : 96px;
+    background-position : center center;
+    background-repeat : no-repeat;
+    display : block;
+    background-size : contain;
+    background-image : url(images/Site-logo.png);
+}
+
+.content-wrapper{
+    display : flex;
+    
+}
+
+
+.sidebar {
+    width: 160px;
+    flex-shrink: 0;
+    padding-left: 0.5em;
+}
+
+.sidebar-box {
+    background: #e0e0e0;
+    border-radius: 10px;
+    border : 0px;
+    padding: 4px;
+    margin : 8px;
+    margin-bottom: 10px;
+    font-family: "Noto Sans", system-ui, sans-serif;
+}
+
+.sidebar-title {
+    text-align: center;
+    border-bottom: 1px solid #fa9549;
+    padding: 3.6px;
+    margin: 3.6px;
+    font-size: 14.4px;
+    color: #111111;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5em 0;
+}
+
+.sidebar-list a {
+    color: #0645ad;     
+    margin : 0;   
+
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "Noto Sans", system-ui, sans-serif;
+    display: block;
+    padding: 3px;
+    font-weight : 600;
+    line-height : 13.5px;
+    word-wrap : break-word;
+    padding-top : 3.6px;
+    padding-left : 6px;
+   
 }

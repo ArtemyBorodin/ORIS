@@ -39,26 +39,8 @@ body{
 }
 
 
-.content-wrapper{
-    font-family : "Noto Sans", system-ui, sans-serif;
 
-}
 
-#mw-data-after-content{
-    margin-left: 160px;
-}
-
-#footer{
-    margin-right: 0px;
-    border-top-width : 0px;
-    color : #111111;
-    background-color: #e0e0e0f2;
-    border : 0px solid #aaaaaa;
-    direction: ltr;
-    margin-left : 160px;
-    padding : 12px;
-    border-radius : 24px;
-}
 
 .header-left{
     display : flex;
@@ -189,7 +171,8 @@ a:hover{
 
 .content-wrapper{
     display : flex;
-    
+    width : 100%;
+    font-family : "Noto Sans", system-ui, sans-serif;
 }
 
 
@@ -246,4 +229,39 @@ a:hover{
     height : 15px;
     display : inline-block;
     margin-right: 4px;
+}
+
+.main-content {
+    flex : 1;
+    display : flex;
+    flex-direction : column;
+    background: #e0e0e0;
+    border-radius: 24px;
+    border : 0px;
+    padding: 4px;
+    margin : 8px;
+    margin-bottom: 10px;
+    font-family: "Noto Sans", system-ui, sans-serif;
+}
+
+.top-bar {
+    border-bottom: 1px solid #aaaaaa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height : 41px;
+    align-items: stretch;
+}
+
+.tab-active{
+    font-family : "Noto Sans", system-ui, sans-serif;
+    color : #000;
+    height : 40px;
+    
+}
+
+.top-bar-left{
+    margin-top : 0px;
+    
+    box-sizing : border-box;
 }

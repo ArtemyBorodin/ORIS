@@ -238,5 +238,13 @@ a:hover{
     word-wrap : break-word;
     padding-top : 3.6px;
     padding-left : 6px;
-   
+    
+}
+
+.sidebar-list a img {
+    color: #0645ad;
+    width : 15px;
+    height : 15px;
+    display : inline-block;
+    margin-right: 4px;
 }

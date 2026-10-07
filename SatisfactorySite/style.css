@@ -355,7 +355,7 @@ a:hover{
     text-align: center;
     color: #E2E9EF;
     
-    padding : 1px 1px;
+    /* padding : 1px 1px; */
     
 }
 
@@ -397,9 +397,22 @@ a:hover{
     z-index: 2;
     font-weight : bold;
     font-size : 39px;
+    margin: 0;
 }
 
 @font-face {
     font-family: 'Satisfontory_v1.5';
     src: url('fonts/Satisfontory_v1.5.ttf') format('truetype');
+}
+
+
+.welcome-body {
+    margin-top: 0;
+    background: #cacaca;
+    border-radius: 10px;
+    border : 0px;
+    padding: 4px;
+    margin : 8px;
+    margin-bottom: 10px;
+    font-family: "Noto Sans", system-ui, sans-serif;
 }

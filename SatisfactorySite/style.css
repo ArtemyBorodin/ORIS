@@ -285,12 +285,121 @@ a:hover{
 .search {
     margin : 8px; 
     width : 320px;
-    border-color : #aaaaaa;
+    border: 1px solid #aaa;
     background: #d7d7d7 url("images/search-icon.svg") no-repeat right 8px center;
     background-size: 16px;
+    font-family: inherit;
+    color : #111111;
+}
+
+.ad-box {
+    max-width: 1222px;
+    margin: 0 auto;             
+    display: flex;
+    align-items: stretch;       
+    justify-content: center;    
     
-    box-shadow : none;
-    border-radius : 2px;
-    appearance: none; 
-    -webkit-appearance: none;
+    padding: 10px 0;
+    margin-top: 10px; 
+}
+
+.ad{
+    width: 728px;
+    height: 90px;
+    display: block;
+}
+
+.main-columns {
+    display: flex;
+    gap: 15px;
+    margin: 10px;
+}
+
+.left-col {
+    flex : 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.right-col {
+    
+    
+    display: flex;
+    width : 100px;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.fp-box {
+    margin: 5px;
+    margin-bottom: 15px;
+    overflow: auto;
+    border-radius: 20px 20px 5px 5px;
+    box-sizing: border-box;
+    background: #e0e0e0;   /* фон коробки, если нужен */
+}
+
+.welcome-box {
+    position: relative;
+    background:
+        url("images/Bolt.png") no-repeat bottom left border-box,
+        url("images/Bolt.png") no-repeat bottom right border-box,
+        url("images/Middle.png") repeat-x center left border-box,
+        linear-gradient(to bottom, #465461, #4F4136);
+    background-size: 0.6em, 0.6em, 1px 0.3em, auto;
+    border-radius: 0.7em 20px 0 0;
+    box-shadow: inset 0 0 20px 0 rgba(0,0,0,0.25);
+    text-align: center;
+    color: #E2E9EF;
+    
+    padding : 1px 1px;
+    
+}
+
+.welcome-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 30px 1px 1px;
+    background: url("images/Texture.png") repeat;
+    opacity: 0.05;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.welcome-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;              /* размер уголка */
+    height: 20px;
+    background: url("images/Corner_top_left.png") no-repeat;
+    background-size: contain;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.welcome-title {
+    position: relative;
+    font-family: 'Satisfontory_v1.5', "Noto Sans", system-ui, sans-serif;
+    color: #f2f2f2;
+    background: linear-gradient(to top, #ADC8DD, #FEFFFE, #E2E9EF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    z-index: 2;
+    font-weight : bold;
+    font-size : 39px;
+}
+
+@font-face {
+    font-family: 'Satisfontory_v1.5';
+    src: url('fonts/Satisfontory_v1.5.ttf') format('truetype');
 }

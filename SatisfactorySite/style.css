@@ -342,7 +342,7 @@ a:hover{
     background: #e0e0e0;   /* фон коробки, если нужен */
 }
 
-.welcome-box {
+.welcome-header {
     position: relative;
     background:
         url("images/Bolt.png") no-repeat bottom left border-box,
@@ -350,16 +350,17 @@ a:hover{
         url("images/Middle.png") repeat-x center left border-box,
         linear-gradient(to bottom, #465461, #4F4136);
     background-size: 0.6em, 0.6em, 1px 0.3em, auto;
-    border-radius: 0.7em 20px 0 0;
+    border-radius: 0.7em 20px 0 0; 
     box-shadow: inset 0 0 20px 0 rgba(0,0,0,0.25);
     text-align: center;
     color: #E2E9EF;
+    padding: 10px 20px
     
     /* padding : 1px 1px; */
     
 }
 
-.welcome-box::after {
+.welcome-header::after {
     content: "";
     position: absolute;
     top: 0;
@@ -373,7 +374,7 @@ a:hover{
     pointer-events: none;
 }
 
-.welcome-box::before {
+.welcome-header::before {
     content: "";
     position: absolute;
     top: 0;
@@ -409,10 +410,15 @@ a:hover{
 .welcome-body {
     margin-top: 0;
     background: #cacaca;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
     border : 0px;
     padding: 4px;
-    margin : 8px;
+    margin: 0 0 10px 0;
     margin-bottom: 10px;
     font-family: "Noto Sans", system-ui, sans-serif;
+    align-items : center;
+}
+
+.welcome-body p:first-child {
+    margin-top: 20px;   /* отступ сверху у первого абзаца */
 }
